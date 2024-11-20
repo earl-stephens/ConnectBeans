@@ -27,6 +27,7 @@ public class ProjectConfig {
     @Bean
     Person person() {
         Person person = new Person();
+        person.setName("Ella");
         return person;
     }
 }
