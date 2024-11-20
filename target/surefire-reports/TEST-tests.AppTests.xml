@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tests.AppTests" time="1.012" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tests.AppTests" time="1.103" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/earltstephens/NetBeansProjects/ConnectBeans/target/surefire/surefirebooter-20241119192908021_3.jar /Users/earltstephens/NetBeansProjects/ConnectBeans/target/surefire 2024-11-19T19-29-07_736-jvmRun1 surefire-20241119192908021_1tmp surefire_0-20241119192908021_2tmp"/>
+    <property name="sun.java.command" value="/Users/earltstephens/NetBeansProjects/ConnectBeans/target/surefire/surefirebooter-20241119194131537_3.jar /Users/earltstephens/NetBeansProjects/ConnectBeans/target/surefire 2024-11-19T19-41-31_297-jvmRun1 surefire-20241119194131537_1tmp surefire_0-20241119194131537_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="tests.AppTests"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/earltstephens/NetBeansProjects/ConnectBeans/target/surefire/surefirebooter-20241119192908021_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/earltstephens/NetBeansProjects/ConnectBeans/target/surefire/surefirebooter-20241119194131537_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="17.0.6+9-LTS-190"/>
@@ -40,7 +40,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="maven.ext.class.path" value="/Applications/Apache NetBeans.app/Contents/Resources/netbeans/java/maven-nblib/netbeans-eventspy.jar:/Applications/Apache NetBeans.app/Contents/Resources/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="maven.ext.class.path" value="/Applications/Apache NetBeans.app/Contents/Resources/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
     <property name="localRepository" value="/Users/earltstephens/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/zs/_9gc6qsx2fq7tz152tnb20vm0000gp/T/"/>
@@ -57,12 +57,13 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testKokoIsInSpringContext" classname="tests.AppTests" time="0.056">
-    <system-err><![CDATA[Nov 19, 2024 7:29:09 PM org.springframework.test.context.support.AbstractTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+  <testcase name="testEllaDoesNotOwnKoko" classname="tests.AppTests" time="0.089">
+    <system-err><![CDATA[Nov 19, 2024 7:41:32 PM org.springframework.test.context.support.AbstractTestContextBootstrapper getDefaultTestExecutionListenerClassNames
 INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-Nov 19, 2024 7:29:09 PM org.springframework.test.context.support.AbstractTestContextBootstrapper getTestExecutionListeners
-INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4218d6a3, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@76505305, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@14cd1699, org.springframework.test.context.support.DirtiesContextTestExecutionListener@77888435, org.springframework.test.context.event.EventPublishingTestExecutionListener@73a1e9a9]
+Nov 19, 2024 7:41:33 PM org.springframework.test.context.support.AbstractTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@77888435, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@73a1e9a9, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@71d44a3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7b98f307, org.springframework.test.context.event.EventPublishingTestExecutionListener@4802796d]
 ]]></system-err>
   </testcase>
-  <testcase name="testEllaIsInSpringContext" classname="tests.AppTests" time="0.005"/>
+  <testcase name="testKokoIsInSpringContext" classname="tests.AppTests" time="0.008"/>
+  <testcase name="testEllaIsInSpringContext" classname="tests.AppTests" time="0.003"/>
 </testsuite>
