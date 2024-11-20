@@ -8,7 +8,9 @@ import beans.Parrot;
 import beans.Person;
 import config.ProjectConfig;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,10 +43,18 @@ public class AppTests {
         assertEquals("Ella", p.getName());
     }
     
+    @Disabled
     @Test
     public void testEllaDoesNotOwnKoko() {
         Person p = context.getBean(Person.class);
         
         assertNull(p.getParrot());
+    }
+    
+    @Test
+    public void testEllaOwnsKoko() {
+        Person p = context.getBean(Person.class);
+        
+        assertNotNull(p.getParrot());
     }
 }
