@@ -1,4 +1,4 @@
+beans/Parrot.class
 config/ProjectConfig.class
-main/Person.class
-main/Parrot.class
-main/ConnectBeans.class
+beans/Person.class
+main/Main.class
